@@ -51,6 +51,7 @@ a{
 }
 
 
+
 ul{
     list-style: none;
 
@@ -89,6 +90,11 @@ body.light-theme{
     padding: 0 1.5rem;
 }
 
+.icons8{
+    position: relative;
+    margin-top: 2rem;
+    margin-left: 6rem;
+}
 .place-items-center{
     display: inline-flex;
     align-items: center;
@@ -313,6 +319,7 @@ body.light-theme{
 .fancy-border {
     position: relative;
     overflow: hidden;
+    border-radius: 15px;    
 }
 
 .fancy-border::before{
@@ -327,10 +334,15 @@ body.light-theme{
     z-index: 5;
 }
 
+.fancy-border::after{
+    border-radius: 15px;
+
+}
 .fancy-border span{
     position: relative;
     display: inline-flex;
-    padding: .6rem  1.5rem;
+    padding: .9rem 1rem;
+    border-radius: 15px;
     background-color: var(--secondary-background-color);
     z-index: 10;
 }
@@ -860,7 +872,8 @@ older-posts-article-image-wrapper, .older-posts .article {
     }
 
     .sign-up-btn{
-        padding: 4px;
+        padding: 2px;
+        
     }
 
     /* Fancy button animation effect */
